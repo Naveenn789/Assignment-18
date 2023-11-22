@@ -8,6 +8,6 @@ namespace ConAppAssignment18
 {
     public interface IConnectable
     {
-        void Connect(bool v);
+        bool Connect();
     }
 }

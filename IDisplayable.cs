@@ -8,6 +8,6 @@ namespace ConAppAssignment18
 {
     public interface IDisplayable
     {
-        void Display();
+        string Display();
     }
 }

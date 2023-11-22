@@ -11,20 +11,15 @@ namespace ConAppAssignment18
         static void Main(string[] args)
         {
             Laptop laptop = new Laptop();
-            IDisplayable one = laptop;
-            IRechargeable two = laptop;
-            IConnectable connectable = laptop;
-            connectable.Connect(true);
-            two.Charge(0);
-            one.Display();
+            laptop.Connect();
+            laptop.Charge(50);
+            laptop.Display();
             Smartphone phone = new Smartphone();
-            IConnectable phone1 = phone;
-            phone1.Connect(true);
-            IDisplayable phone2 = phone;
+            phone.Connect();
+            phone.Charge(50);
             phone.Display();
-            IRechargeable phone3 = phone;
-            phone3.Charge(0);
 
+            
 
 
 
